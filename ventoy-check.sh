@@ -1,3 +1,5 @@
+# Checks a Ventoy USB - returns contents or empty
+
 #!/usr/bin/env bash
 # ventoy-check.sh
 MNT=$(lsblk -o LABEL,MOUNTPOINT -nr | awk '$1=="Ventoy"{print $2}')
